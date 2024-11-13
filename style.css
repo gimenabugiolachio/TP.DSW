@@ -88,16 +88,14 @@ nav .nav-buttons .nav-btn:hover {
 
 /* -- SECCIONES */
 .section {
-    padding: 3rem 2rem;
+    background-color: #ffffff;
+    color: #232323;
+    padding: 1rem .5rem;
     margin-top: 80px; 
     text-align: center;
 }
 
-#inicio {
-    background-color: #ffffff;
-    color: #232323;
-}
-
+/*- INICIO -*/
 .container-cards{
     width: 100%;
     display: flex;
@@ -108,19 +106,22 @@ div.card{
     background-color: transparent;
 }
 
+
+/*- ACERCA DE -*/
+
 #acerca-de {
-    background-color: #ffffff;
-    color: #232323;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
 }
 
-#categorias {
-    background-color: #ffffff;
-    color: #232323;
-}
-
-#contacto {
-    background-color: #ffffff;
-    color: #232323;
+#acerca-de img {
+    width: 100%; /* Ajusta el ancho como desees */
+    max-width: 1600px; /* Limita el ancho máximo */
+    height: auto;
 }
 
 .categories {
@@ -178,8 +179,8 @@ form button:hover {
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: #333;
-    color: white;
+    background-color: #232323;
+    color: #ffffff;
     margin-top: 2rem;
 }
 
