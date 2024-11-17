@@ -1,0 +1,16 @@
+{
+  "name": "tp-dsw",
+  "version": "1.0.0",
+  "description": "Proyecto realizado para la materia Desarrollo de Sistemas Web (DSW) en la UTN Regional Santa Fe. El sitio web, llamado ElectroMarket, es una tienda e-commerce de productos tecnológicos, que proporciona una experiencia de compra interactiva y moderna.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "sass": "^1.81.0"
+  }
+}
