@@ -19,6 +19,7 @@ main {
   align-items: center; 
   justify-content: center; 
   padding: 2rem 1rem;
+  margin-bottom: 150px;
 }
 
 .login-section {
@@ -44,6 +45,13 @@ main {
       font-weight: bold;
       color: $login-primary;
     }
+  }
+
+  .login-form-izquierda {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 24px;
   }
 
   .login-form,
@@ -134,15 +142,20 @@ main {
     }
   }
 
+
+
   a {
-    display: block;
     margin-top: 1rem;
-    text-align: center;
     color: $login-link-color;
     text-decoration: none;
 
     &:hover {
       text-decoration: underline;
     }
-  }
+  } 
+}
+
+.security-issue{
+  text-align: left;
+
 }
