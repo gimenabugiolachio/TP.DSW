@@ -25,7 +25,7 @@ body {
 }
 
 .content-wrapper {
-    flex: 1; 
+    padding-bottom: 32px; 
 }
 
 nav {
@@ -107,6 +107,7 @@ nav {
     padding: 1rem .5rem;
     margin-top: 80px;
     text-align: center;
+    padding-bottom: 32px;
 }
 
 // - INICIO -
@@ -127,21 +128,29 @@ div.card {
     align-items: center;
     flex-direction: column;
     text-align: center;
-    padding: 20px;
+    padding: 50px;
+    padding-bottom: 32px;
+    padding-top: 80px;
 
     img {
         width: 100%; // Ajusta el ancho como desees
         max-width: 1600px; // Limita el ancho máximo
         height: auto;
+        margin-top: 32px;
     }
+
     .image-container {
         position: relative;
         display: inline-block;
     }
 
+    .image-container:last-of-type {
+        margin-bottom: 32px;
+    }
+
     .image-container img {
         width: 100%; /* Ajusta al tamaño de su contenedor */
-        height: auto;
+        height: auto;        
     }
 
     .image-container .text {
@@ -213,6 +222,10 @@ footer {
     background-color: #232323;
     color: #ffffff;
     margin-top: 2rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 // Media Queries

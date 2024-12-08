@@ -18,8 +18,9 @@ body {
 }
 
 .content-wrapper {
-    flex: 1;
+    padding-bottom: 32px; 
 }
+
 
 /* --NAVBAR-- */
 nav {
@@ -34,7 +35,7 @@ nav {
     top: 0;
     z-index: 100;
     border-bottom: 1px solid #232323;
-
+ 
     .logo a {
         text-decoration: none;
     }
@@ -101,6 +102,7 @@ nav {
     padding: 1rem .5rem;
     margin-top: 80px; 
     text-align: center;
+    padding-bottom: 32px;
 }
 
 /*- INICIO -*/
@@ -123,13 +125,17 @@ div.card{
     align-items: center;
     flex-direction: column;
     text-align: center;
-    padding: 20px;
+    padding: 50px;
+    padding-bottom: 32px;
+    padding-top: 80px;
+
 }
 
 #acerca-de img {
     width: 100%; /* Ajusta el ancho como desees */
     max-width: 1600px; /* Limita el ancho máximo */
     height: auto;
+    margin-top: 32px;
 }
 img {
     width: 100%; 
@@ -144,6 +150,10 @@ img {
 .image-container img {
     width: 100%; 
     height: auto;
+}
+
+.image-container:last-of-type {
+    margin-bottom: 32px;
 }
 
 .image-container .text {
@@ -236,6 +246,10 @@ footer {
     background-color: #232323;
     color: #ffffff;
     margin-top: 2rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 @media (max-width: 768px) {
