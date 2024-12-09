@@ -129,4 +129,17 @@ main {
 
 .security-issue {
   text-align: left;
+}
+
+.security-issue a {
+  font-size: 16px;
+  color: #000;
+}
+.security-issue a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+.security-issue a i {
+  font-size: 40px;
+  color: #6c757d;
 }/*# sourceMappingURL=login-register.css.map */

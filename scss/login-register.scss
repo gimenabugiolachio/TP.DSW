@@ -159,3 +159,20 @@ main {
   text-align: left;
 
 }
+
+// icono de seguridad
+.security-issue {
+  a {
+      font-size: 16px; 
+      color: #000; 
+      &:hover {
+          color: #0056b3; 
+          text-decoration: underline;
+      }
+
+      i {
+          font-size: 40px; 
+          color: #6c757d; 
+      }
+  }
+}
