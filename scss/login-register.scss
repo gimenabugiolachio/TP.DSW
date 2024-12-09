@@ -51,7 +51,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-right: 24px;
+    margin-right: 35px;
   }
 
   .login-form,
@@ -142,8 +142,6 @@ main {
     }
   }
 
-
-
   a {
     margin-top: 1rem;
     color: $login-link-color;
@@ -177,9 +175,7 @@ main {
   }
 }
 
-
-
-
+// nav
 .navbar {
   .navbar-brand img {
       max-height: 40px;

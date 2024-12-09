@@ -40,7 +40,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-right: 24px;
+  margin-right: 35px;
 }
 .login-section .login-form,
 .login-section .register-form {
@@ -142,4 +142,18 @@ main {
 .security-issue a i {
   font-size: 40px;
   color: #6c757d;
+}
+
+.navbar .navbar-brand img {
+  max-height: 40px;
+}
+.navbar .nav-link {
+  font-size: 16px;
+  color: #000;
+}
+.navbar .nav-link:hover {
+  color: #0056b3;
+}
+.navbar .btn i {
+  font-size: 18px;
 }/*# sourceMappingURL=login-register.css.map */
