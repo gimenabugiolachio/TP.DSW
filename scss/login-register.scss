@@ -176,3 +176,26 @@ main {
       }
   }
 }
+
+
+
+
+.navbar {
+  .navbar-brand img {
+      max-height: 40px;
+  }
+
+  .nav-link {
+      font-size: 16px;
+      color: #000;
+      &:hover {
+          color: #0056b3;
+      }
+  }
+
+  .btn {
+      i {
+          font-size: 18px;
+      }
+  }
+}
