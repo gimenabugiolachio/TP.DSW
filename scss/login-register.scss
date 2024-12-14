@@ -16,10 +16,18 @@ body {
 main {
   flex: 1;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 2rem 1rem;
   margin-bottom: 150px;
+ }
+
+.login-form-card {
+  @media (min-width: 992px) {
+    max-width: 600px;
+    width: 600px;    
+  }
 }
 
 .login-section {
@@ -30,18 +38,12 @@ main {
   width: 100%;
   margin-top: -2rem;
 
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-
   .login-text {
     flex: 1;
     text-align: left;
 
     h3 {
-      font-size: 1.8rem;
+      font-size: 1.5rem;
       font-weight: bold;
       color: $login-primary;
     }
@@ -52,6 +54,15 @@ main {
     flex-direction: column;
     justify-content: space-between;
     margin-right: 35px;
+  
+ 
+      position: relative;
+      a {
+        position: absolute;
+        left: 0;
+        top: 300px;
+      }      
+    
   }
 
   .login-form,

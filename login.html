@@ -46,7 +46,7 @@
             </ul>
 
             <!-- Botones de navegación centrados -->
-            <div class="d-flex justify-content-center align-items-center mx-auto">
+            <div class="d-flex justify-content-center align-items-center">
               <a href="#" class="btn btn-outline-secondary me-2">
                 <i class="fas fa-search"></i>
               </a>
@@ -66,15 +66,14 @@
     </div>
 
     <main>
-      <section class="login-section">
-        <div class="container mb-5">
+      <section class="login-section d-flex flex-column">
+        <div class="d-flex flex-column w-100 position-relative ">
+          <div class="d-flex flex-column flex-sm-row justify-content-center">
           <!-- Columna izquierda -->
-          <div class="login-form-izquierda">
-            <div class="login-text">
-              <h3>Ingresá tu email o teléfono para iniciar sesión</h3>
-            </div>
+          <div class="login-form-izquierda d-flex flex-column justify-content-between">
+            <h3 class="login-text">Ingresá tu email o teléfono para iniciar sesión</h3>
+            <a href="problema-seguridad.html" class="d-none alert alert-light d-sm-flex align-items-center justify-content-between border rounded shadow-sm p-3 mt-5 text-decoration-none align-self-center align-self-sm-start" style="max-width: 400px; " >
 
-            <a href="problema-seguridad.html" class="alert alert-light d-flex align-items-center justify-content-between border rounded shadow-sm p-3 mt-5 text-decoration-none" style="max-width: 400px; " >
               <!-- Ícono e información -->
               <div class="d-flex align-items-center">
                 <i class="bi bi-shield-lock me-2" style="font-size: 1.5rem;"></i>
@@ -83,9 +82,10 @@
             
               <i class="bi bi-chevron-right text-dark" style="font-size: 1.2rem;"></i>
             </a>
+           
           </div>
 
-          <div class="login-form card shadow-sm p-4">
+          <div class="login-form-card shadow-sm p-4 mw-50">
             <form action="#" method="post">
               <div class="form-group mb-3">
                 <label for="email">Email o teléfono</label>
@@ -105,14 +105,24 @@
                 <span>O</span>
               </p>
 
-              <button
-                type="button"
-                class="btn btn-outline-secondary w-100 google-login"
-              >
+              <button type="button" class="btn btn-outline-secondary w-100 google-login">
                 <i class="fab fa-google"></i> Iniciar sesión con Google
               </button>
             </form>
           </div>
+
+          <a href="problema-seguridad.html" class="alert alert-light d-flex d-sm-none align-items-center justify-content-between border rounded shadow-sm p-3 mt-4 text-decoration-none align-self-center align-self-sm-start mb-3" style="max-width: 400px; " >
+
+            <!-- Ícono e información -->
+            <div class="d-flex align-items-center">
+              <i class="bi bi-shield-lock me-2" style="font-size: 1.5rem;"></i>
+              <span class="fw-semibold text-dark">Tengo un problema de seguridad</span>
+            </div>
+          
+            <i class="bi bi-chevron-right text-dark" style="font-size: 1.2rem;"></i>
+          </a>
+          </div>
+
         </div>
       </section>
     </main>
