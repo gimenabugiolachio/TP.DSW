@@ -14,10 +14,10 @@ body {
 }
 
 main {
-  flex: 1; 
+  flex: 1;
   display: flex;
-  align-items: center; 
-  justify-content: center; 
+  align-items: center;
+  justify-content: center;
   padding: 2rem 1rem;
   margin-bottom: 150px;
 }
@@ -25,7 +25,7 @@ main {
 .login-section {
   display: flex;
   justify-content: space-between;
-  align-items: center;  
+  align-items: center;
   padding: 1rem;
   width: 100%;
   margin-top: -2rem;
@@ -122,23 +122,23 @@ main {
   }
 
   .google-login {
-    background-color: $white; 
-    color: #555; 
-    border: 1px solid $gray-light; 
+    background-color: $white;
+    color: #555;
+    border: 1px solid $gray-light;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem; 
+    gap: 0.5rem;
     font-size: 1rem;
     padding: 0.8rem;
     border-radius: $login-border-radius;
-    transition: all 0.3s ease; 
+    transition: all 0.3s ease;
     cursor: pointer;
 
     &:hover {
-      background-color: $login-primary; 
-      color: $white; 
-      border-color: $login-primary; 
+      background-color: $login-primary;
+      color: $white;
+      border-color: $login-primary;
     }
   }
 
@@ -150,48 +150,47 @@ main {
     &:hover {
       text-decoration: underline;
     }
-  } 
+  }
 }
 
-.security-issue{
+.security-issue {
   text-align: left;
-
 }
 
 // icono de seguridad
 .security-issue {
   a {
-      font-size: 16px; 
-      color: #000; 
-      &:hover {
-          color: #0056b3; 
-          text-decoration: underline;
-      }
+    font-size: 16px;
+    color: #000;
+    &:hover {
+      color: #0056b3;
+      text-decoration: underline;
+    }
 
-      i {
-          font-size: 40px; 
-          color: #6c757d; 
-      }
+    i {
+      font-size: 40px;
+      color: #6c757d;
+    }
   }
 }
 
 // nav
 .navbar {
   .navbar-brand img {
-      max-height: 40px;
+    max-height: 40px;
   }
 
   .nav-link {
-      font-size: 16px;
-      color: #000;
-      &:hover {
-          color: #0056b3;
-      }
+    font-size: 16px;
+    color: #000;
+    &:hover {
+      color: #0056b3;
+    }
   }
 
   .btn {
-      i {
-          font-size: 18px;
-      }
+    i {
+      font-size: 18px;
+    }
   }
 }
