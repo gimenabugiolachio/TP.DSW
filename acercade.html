@@ -12,27 +12,55 @@
 
 <body>
     <div class="content-wrapper">
+      <!-- Menú de navegación -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <!-- Logo -->
+          <a href="inicio.html" class="navbar-brand">
+            <img src="./Images/logo.png" alt="ElectroMarket Logo" style="height: 50px" />
+          </a>
 
-        <!-- Menú de navegación -->
-        <nav>
-            <div class="logo">
-                <a href="inicio.html" class="navbar-brand">
-                    <img src="./Images/logo.png" alt="ElectroMarket Logo">
-                </a>
-            </div>
-            <ul class="nav-links">
-                <li class="nav-item"><a href="inicio.html" class="nav-link">Inicio</a></li>
-                <li class="nav-item"><a href="acercade.html" class="nav-link active">Acerca de</a></li>
-                <li class="nav-item"><a href="categorias.html" class="nav-link">Categorías</a></li>
-                <li class="nav-item"><a href="contacto.html" class="nav-link">Contacto</a></li>
+          <!-- Botón toggle para dispositivos pequeños -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Enlaces del menú -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a href="inicio.html" class="nav-link">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a href="acercade.html" class="nav-link active">Acerca de</a>
+              </li>
+              <li class="nav-item">
+                <a href="categorias.html" class="nav-link">Categorías</a>
+              </li>
+              <li class="nav-item">
+                <a href="contacto.html" class="nav-link">Contacto</a>
+              </li>
             </ul>
-            <div class="nav-buttons">
-                <button class="nav-btn"><i class="fas fa-search"></i></button>
-                <button class="nav-btn"><i class="fas fa-shopping-cart"></i></button>
-                <button class="nav-btn"><i class="fas fa-user"></i></button>
-                <button class="nav-btn"><i class="fas fa-star"></i></button>
+
+            <!-- Botones de navegación centrados -->
+            <div class="d-flex justify-content-center align-items-center">
+              <a href="#" class="btn btn-outline-secondary me-2">
+                <i class="fas fa-search"></i>
+              </a>
+              <a href="#" class="btn btn-outline-secondary me-2">
+                <i class="fas fa-shopping-cart"></i>
+              </a>
+              <a href="login.html" class="btn btn-outline-secondary me-2">
+                <i class="fas fa-user"></i>
+              </a>
+              <a href="#" class="btn btn-outline-secondary">
+                <i class="fas fa-star"></i>
+              </a>
             </div>
-        </nav>
+          </div>
+        </div>
+      </nav>
     
         <!-- Sección Acerca de -->
         <section id="acerca-de">
@@ -72,5 +100,8 @@
     <footer>
         <p>&copy; ElectroMarket</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
 </body>
 </html>
