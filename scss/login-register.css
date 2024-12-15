@@ -26,9 +26,8 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
   width: 100%;
-  margin-top: -2rem;
+  margin-top: 1rem;
 }
 .login-section .login-text {
   flex: 1;

@@ -34,9 +34,9 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  //padding: 1rem;
   width: 100%;
-  margin-top: -2rem;
+  margin-top: 1rem;
 
   .login-text {
     flex: 1;
@@ -55,15 +55,13 @@ main {
     justify-content: space-between;
     margin-right: 35px;
   
- 
-      position: relative;
+       position: relative;
       a {
         position: absolute;
         left: 0;
         top: 300px;
-      }      
-    
-  }
+      }   
+    }
 
   .login-form,
   .register-form {
