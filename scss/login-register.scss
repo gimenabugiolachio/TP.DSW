@@ -1,0 +1,186 @@
+// Variables locales
+$login-primary: #000; // Botón principal
+$login-link-color: #007bff; // Para los enlaces
+$login-border-radius: 8px; // Bordes redondeados
+$login-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); // Sombra suave
+$white: #fff; // Blanco
+$gray-light: #ddd; // Gris claro
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  margin-bottom: 150px;
+ }
+
+.login-form-card {
+  @media (min-width: 992px) {
+    max-width: 600px;
+    width: 600px;    
+  }
+}
+
+.login-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  width: 100%;
+  margin-top: -2rem;
+
+  .login-text {
+    flex: 1;
+    text-align: left;
+
+    h3 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: $login-primary;
+    }
+  }
+
+  .login-form-izquierda {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 35px;
+  
+ 
+      position: relative;
+      a {
+        position: absolute;
+        left: 0;
+        top: 300px;
+      }      
+    
+  }
+
+  .login-form,
+  .register-form {
+    flex: 1;
+    max-width: 800px;
+    background-color: $white;
+    border-radius: $login-border-radius;
+    box-shadow: $login-box-shadow;
+    padding: 2rem;
+  }
+
+  label {
+    font-size: 0.9rem;
+    color: #555;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0 0.5rem;
+    border: 1px solid $gray-light;
+    border-radius: $login-border-radius;
+    background-color: #f9f9f9;
+
+    &:focus {
+      outline: none;
+      border-color: $login-link-color;
+      box-shadow: 0 0 4px rgba(0, 123, 255, 0.25);
+    }
+  }
+
+  button {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: $login-primary;
+    color: $white;
+    border: none;
+    border-radius: $login-border-radius;
+    font-size: 1rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken($login-primary, 10%);
+    }
+  }
+
+  .divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    font-size: 0.9rem;
+    gap: 1rem;
+
+    &::before,
+    &::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background-color: $gray-light;
+    }
+
+    span {
+      padding: 0 0.5rem;
+      background-color: $white;
+    }
+  }
+
+  .google-login {
+    background-color: $white;
+    color: #555;
+    border: 1px solid $gray-light;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    padding: 0.8rem;
+    border-radius: $login-border-radius;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $login-primary;
+      color: $white;
+      border-color: $login-primary;
+    }
+  }
+
+  a {
+    margin-top: 1rem;
+    color: $login-link-color;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.security-issue {
+  text-align: left;
+}
+
+// icono de seguridad
+.security-issue {
+  a {
+    font-size: 16px;
+    color: #000;
+    &:hover {
+      color: #0056b3;
+      text-decoration: underline;
+    }
+
+    i {
+      font-size: 40px;
+      color: #6c757d;
+    }
+  }
+}
