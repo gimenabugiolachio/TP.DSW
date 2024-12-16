@@ -11,8 +11,9 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 2rem 1rem;
+  padding: 2rem 1rem 0 1rem;
   margin-bottom: 150px;
+  padding-bottom: 75px;
 }
 
 @media (min-width: 992px) {
@@ -26,9 +27,8 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
   width: 100%;
-  margin-top: -2rem;
+  margin-top: 1rem;
 }
 .login-section .login-text {
   flex: 1;
