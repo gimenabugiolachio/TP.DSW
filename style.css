@@ -128,9 +128,9 @@ div.card {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  padding: 50px;
-  padding-bottom: 32px;
-  padding-top: 80px;
+  padding: 25px;
+  padding-bottom: 68px;
+  padding-top: 10px;
 }
 
 #acerca-de img {
@@ -145,13 +145,12 @@ img {
 }
 
 .image-container {
-  position: relative;
-  display: inline-block;
+  position: relative; 
 }
 
 .image-container img {
   width: 100%;
-  height: auto;
+  
 }
 
 .image-container:last-of-type {
