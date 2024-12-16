@@ -19,11 +19,12 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 2rem 1rem;
+  padding: 2rem 1rem 0 1rem;
   margin-bottom: 150px;
+  padding-bottom: 75px;  
  }
 
-.login-form-card {
+ .login-form-card {
   @media (min-width: 992px) {
     max-width: 600px;
     width: 600px;    
