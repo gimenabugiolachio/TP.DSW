@@ -106,27 +106,45 @@ nav {
 }
 
 /*- INICIO -*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* -- Sección Carousel -- */
+.carousel-inner img {
+  object-fit: cover;
+  height: 500px; /* Ajustar altura para pantallas grandes */
+}
+
+/* -- Últimas Ofertas -- */
 .container-cards {
-  width: 100%;
-  gap: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .container-cards img {
-  height: 300px;
-  width: 300px;
+  margin: 10px;
 }
 
-div.card {
-  background-color: transparent;
+/* -- Media Queries -- */
+@media (max-width: 768px) {
+  .carousel-inner img {
+    height: 300px; /* Reducir altura en pantallas pequeñas */
+  }
+
+  .container-cards img {
+    max-width: 90%;
+    margin: 0 auto;
+  }
 }
 
 /*- ACERCA DE -*/
-
 #acerca-de {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
   text-align: center;
   padding: 25px;
   padding-bottom: 68px;
@@ -134,37 +152,77 @@ div.card {
 }
 
 #acerca-de img {
-  width: 100%; /* Ajusta el ancho como desees */
-  max-width: 1600px; /* Limita el ancho máximo */
+  max-width: 100%; 
   height: auto;
-  margin-top: 32px;
-}
-img {
-  width: 100%;  
-  max-height: 650px;
 }
 
+/* Image Container */
 .image-container {
-  position: relative; 
+  position: relative;
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .image-container img {
-  width: 100%;
-  
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Text Overlay */
+.image-container .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 90%;
+}
+
+img {
+  width: 100%;  
+  max-height: 650px;
 }
 
 .image-container:last-of-type {
   margin-bottom: 32px;
 }
 
-.image-container .text {
-  position: absolute;
-  top: 50%;
-  left: 35%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 16px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+.myv{
+  margin-top: 1em;
+}
+
+@media (max-width: 768px) {
+  .image-container {
+    margin-bottom: 16px;
+  }
+
+  .image-container .text {
+    position: static; 
+    transform: none;
+    background: none;
+    color: black;
+    text-shadow: none;
+    margin-top: 10px;
+  }
+
+  #acerca-de h3 {
+    font-size: 1.2rem;
+  }
+
+  #acerca-de p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
 }
 
 /* -CATEGORIAS- */
