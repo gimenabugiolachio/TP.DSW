@@ -2,108 +2,128 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="/main.js"></script>
-    <title>Categorías - ElectroMarket</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explora las categorías de productos en ElectroMarket: tecnología, electrodomésticos y más.">
+  <meta name="keywords" content="tecnología, electrodomésticos, categorías, productos">
+  <title>Categorías - ElectroMarket</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body>
-    <div class="content-wrapper">
+    <header class="sticky-top">
         <!-- Menú de navegación -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <a href="inicio.html" class="navbar-brand">
-                    <img src="./Images/logo.png" alt="ElectroMarket Logo" style="height: 50px" />
+        <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+          <div class="container-fluid">
+            <!-- Logo -->
+            <a href="inicio.html" class="navbar-brand">
+              <img src="./Images/logo.png" alt="ElectroMarket Logo" style="height: 50px">
+            </a>
+    
+            <!-- Botón toggle para dispositivos pequeños -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Enlaces del menú -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a href="inicio.html" class="nav-link ">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a href="acercade.html" class="nav-link">Acerca de</a>
+                </li>
+                <li class="nav-item">
+                  <a href="categorias.html" class="nav-link active">Categorías</a>
+                </li>
+                <li class="nav-item">
+                  <a href="contacto.html" class="nav-link">Contacto</a>
+                </li>
+              </ul>
+    
+              <!-- Botones de navegación centrados -->
+              <div class="d-flex">
+                <a href="#" class="btn btn-outline-secondary me-2" aria-label="Buscar">
+                  <i class="fas fa-search"></i>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse pe-3" id="navbarNav">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a href="inicio.html" class="nav-link">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="acercade.html" class="nav-link ">Acerca de</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="categorias.html" class="nav-link  active">Categorías</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="contacto.html" class="nav-link">Contacto</a>
-                        </li>
-                    </ul>
-                    <div class="d-flex justify-content-center align-items-center">
-                        <a href="#" class="btn btn-outline-secondary me-2">
-                            <i class="fas fa-search"></i>
-                        </a>
-                        <a href="#" class="btn btn-outline-secondary me-2">
-                            <i class="fas fa-shopping-cart"></i>
-                        </a>
-                        <a href="login.html" class="btn btn-outline-secondary me-2">
-                            <i class="fas fa-user"></i>
-                        </a>
-                        <a href="#" class="btn btn-outline-secondary">
-                            <i class="fas fa-star"></i>
-                        </a>
-                    </div>
-                </div>
+                <a href="#" class="btn btn-outline-secondary me-2" aria-label="Carrito de compras">
+                  <i class="fas fa-shopping-cart"></i>
+                </a>
+                <a href="login.html" class="btn btn-outline-secondary me-2" aria-label="Usuario">
+                  <i class="fas fa-user"></i>
+                </a>
+                <a href="#" class="btn btn-outline-secondary" aria-label="Favoritos">
+                  <i class="fas fa-star"></i>
+                </a>
+              </div>
             </div>
+          </div>
         </nav>
+      </header>
 
-        <!-- Sección Categorías -->
-        <section id="categorias" class="section">
-            <div class="container py-4">
-                <h2 class="text-center">Categorías de Compra</h2>
-                <div class="categories mt-4">
-                    <div class="category">
-                        <h4>Electrodomésticos</h4>
-                        <div>
-                            <p><a href="#" aria-label="Heladeras, categoría Electrodomésticos">Heladeras</a></p>
-                            <p><a href="#" aria-label="Cocinas, Anafes y Hornos, categoría Electrodomésticos">Cocinas, Anafes y Hornos</a></p>
-                            <p><a href="#" aria-label="Lavarropas, categoría Electrodomésticos">Lavarropas</a></p>
-                            <p><a href="#" aria-label="Aire Acondicionado, categoría Electrodomésticos">Aire Acondicionado</a></p>
-                        </div>
-                    </div>
-                    <div class="category">
-                        <h4>TV y Audio</h4>
-                        <div>
-                            <p><a href="#" aria-label="TV por Marcas, categoría TV y Audio">TV por Marcas</a></p>
-                            <p><a href="#" aria-label="TV por pulgadas, categoría TV y Audio">TV por pulgadas</a></p>
-                            <p><a href="#" aria-label="TV por resolución, categoría TV y Audio">TV por resolución</a></p>
-                            <p><a href="#" aria-label="Soundbar, categoría TV y Audio">Soundbar</a></p>
-                            <p><a href="#" aria-label="Sound Tower, categoría TV y Audio">Sound Tower</a></p>
-                        </div>
-                    </div>
-                    <div class="category">
-                        <h4>Tecnología</h4>
-                        <div>
-                            <p><a href="#" aria-label="Celulares, categoría Tecnología">Celulares</a></p>
-                            <p><a href="#" aria-label="Smartwatch, categoría Tecnología">Smartwatch</a></p>
-                            <p><a href="#" aria-label="Tablets, categoría Tecnología">Tablets</a></p>
-                            <p><a href="#" aria-label="Impresoras, categoría Tecnología">Impresoras</a></p>
-                            <p><a href="#" aria-label="Consolas, categoría Tecnología">Consolas</a></p>
-                        </div>
-                    </div>
-                </div>
+  <main>
+    <section id="categorias" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="mb-3">Categorías de Compra</h2>
+          <p class="lead">Explora nuestra selección de productos en tecnología, electrodomésticos y más.</p>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          <div class="col">
+            <div class="card h-100 text-center">
+              <div class="card-body">
+                <h4 class="card-title">Electrodomésticos</h4>
+                <ul class="list-unstyled">
+                  <li><a class="link" href="#">Heladeras</a></li>
+                  <li><a class="link" href="#">Cocinas, Anafes y Hornos</a></li>
+                  <li><a class="link" href="#">Lavarropas</a></li>
+                  <li><a class="link" href="#">Aire Acondicionado</a></li>
+                </ul>
+              </div>
             </div>
-        </section>
+          </div>
 
-        <!-- Footer -->
-        <footer class="bg-dark text-light py-3 text-center">
-            <p>&copy; 2024 ElectroMarket. Todos los derechos reservados.</p>
-        </footer>
-    </div>
+          <div class="col">
+            <div class="card h-100 text-center">
+              <div class="card-body">
+                <h4 class="card-title">TV y Audio</h4>
+                <ul class="list-unstyled">
+                  <li><a class="link" href="#">TV por Marcas</a></li>
+                  <li><a class="link" href="#">TV por Pulgadas</a></li>
+                  <li><a class="link" href="#">Soundbar</a></li>
+                  <li><a class="link" href="#">Sound Tower</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+          <div class="col">
+            <div class="card h-100 text-center">
+              <div class="card-body">
+                <h4 class="card-title">Tecnología</h4>
+                <ul class="list-unstyled">
+                  <li><a class="link" href="#">Celulares</a></li>
+                  <li><a class="link" href="#">Smartwatch</a></li>
+                  <li><a class="link" href="#">Tablets</a></li>
+                  <li><a class="link" href="#">Consolas</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-light py-3 text-center">
+    <p>&copy; 2024 ElectroMarket. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
 </html>

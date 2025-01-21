@@ -4,25 +4,17 @@
   box-sizing: border-box;
 }
 
-html,
-body {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-}
-
 body {
   font-family: Arial, sans-serif;
+  overflow-x: hidden; /* Elimina el desplazamiento horizontal */
   line-height: 1.6;
   background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-.content-wrapper {
-  padding-bottom: 35px;
-}
-
-/* --NAVBAR-- */
+/* Navegación */
 nav {
   background-color: #ffff;
   color: #000;
@@ -95,7 +87,7 @@ nav {
   }
 }
 
-/* -- SECCIONES */
+/* -- Secciones */
 .section {
   background-color: #ffffff;
   color: #232323;
@@ -105,75 +97,50 @@ nav {
   padding-bottom: 54px;
 }
 
-/*- INICIO -*/
-img {
-  max-width: 100%;
-  height: auto;
+section h2 {
+  font-size: 1.5rem;
 }
 
-/* -- Sección Carousel -- */
-.carousel-inner img {
-  object-fit: cover;
-  height: 400px; 
-}
-
-.container-cards {
+/*Inicio*/
+.card-container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem; 
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .2rem;
+  padding: 1rem;
 }
 
-.card {
-  background-color: transparent; 
-  border: none; 
-  outline: none; 
-  box-shadow: none; 
-  max-width: 250px; 
+.card-inicio {
+  background-color: transparent;
+  outline: none;
+  box-shadow: none;
+  max-width: 250px;
   transition: transform 0.3s ease;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.card img {
-  border-radius: 10px; 
+.card-inicio img {
+  border-radius: 10px;
   object-fit: cover;
 }
 
-.card:hover {
+.card-inicio:hover {
   transform: translateY(-0.5rem);
 }
 
-
-/* -- Media Queries -- */
-@media (max-width: 768px) {
-  .card {
-    max-width: 100%; 
-  }
+.btn,
+.card-inicio {
+  transition: all 0.3s ease-in-out;
 }
 
-/*- ACERCA DE -*/
-#acerca-de {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 25px;
-  padding-bottom: 68px;
-  padding-top: 10px;
-}
-
-#acerca-de img {
-  max-width: 100%; 
+/*Acerca De*/
+.banner-acercade {
+  max-width: 100%;
   height: auto;
-}
-
-/* Image Container */
-.image-container {
-  position: relative;
-  margin-bottom: 32px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 
 .image-container img {
@@ -183,190 +150,98 @@ img {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-
 .image-container .text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  background: rgba(0, 0, 0, 0.6);
-  padding: 15px;
-  border-radius: 8px;
+  padding-top: 15px;
   font-size: 16px;
   width: 90%;
-}
-
-img {
-  width: 100%;  
-  max-height: 650px;
-}
-
-.image-container:last-of-type {
-  margin-bottom: 32px;
-}
-
-.myv{
-  margin-top: 1em;
-}
-
-@media (max-width: 768px) {
-  .image-container {
-    margin-bottom: 16px;
-  }
-
-  .image-container .text {
-    position: static; 
-    transform: none;
-    background: none;
-    color: black;
-    text-shadow: none;
-    margin-top: 10px;
-  }
-
-  #acerca-de h3 {
-    font-size: 1.2rem;
-  }
-
-  #acerca-de p {
-    font-size: 1rem;
-    line-height: 1.5;
-  }
-}
-
-/* -CATEGORIAS- */
-.section h2 {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.categories {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-}
-
-.category {
-  background: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
-  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.category:hover {
-  background-color: #f8f9fa;
+.intro {
+  display: inline;
+  font-size: 16px;
+  text-align: center;
 }
 
-.category a {
+/*Categorias*/
+.card .link {
   color: #3f3f3f;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
-.category a:hover {
-  text-decoration: underline;
-  color: #9c9b99;
+.card .link:hover{
+  color: #9e9c9c;
+}
+
+/*Contacto*/
+.list-group h5{
+  font-size: 1.1em;
 }
 
 
-@media (max-width: 768px) {
-  .categories {
-      grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (max-width: 576px) {
-  .categories {
-      grid-template-columns: 1fr;
-  }
-}
-
-/* -CONTACTO- */
-.list-group-item {
-  border: none;
+/* Formularios */
+form {
+  background: #ffffff;
   border-radius: 8px;
-  transition: background-color 0.3s ease;
+  padding: 20px;
 }
 
-.list-group-item:hover {
-  background-color: #f8f9fa;
+.form-control {
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  padding: 10px;
 }
 
-/* Títulos de las opciones */
-.list-group-item h5 {
-  font-size: 1rem;
-  font-weight: 600;
+
+button {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
 }
 
-/* Descripción de las opciones */
-.list-group-item p {
-  font-size: 0.9rem;
+button.btn-outline-secondary {
+  background-color: transparent;
   color: #6c757d;
 }
 
-/* Icono de flecha */
-.list-group-item .fas.fa-chevron-right {
-  font-size: 1rem;
-}
-
-/* Íconos principales */
-.list-group-item .fa-2x {
-  width: 32px;
-  height: 32px;
-}
-
-.search-form .input-group-text {
-  border: none;
-}
-.search-form input {
-  border: 1px solid #ddd;
-}
-.search-form button {
-  border-radius: .5em;
-}
-
-.list-group-item {
-  display: flex;
-  align-items: flex-start; 
-  gap: 1rem; 
-}
-
-.list-group-item i {
-  flex-shrink: 0; 
-  width: 40px;
-  text-align: left; 
-}
-
-.list-group-item div {
-  text-align: left; 
-  flex-grow: 1; 
-}
-
-.list-group-item h5,
-.list-group-item p {
-  margin: 0; 
+button.btn-outline-secondary:hover {
+  background-color: #6c757d;
+  color: #ffffff;
 }
 
 /* Footer */
 footer {
   background-color: #232323;
   color: #ffffff;
-  font-size: 0.9rem;
-}
-
-footer {
   text-align: center;
-  padding: 1rem;
-  background-color: #232323;
-  color: #ffffff;
-  margin-top: 2rem;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  padding: 1rem 0;
+  margin-top: auto;
 }
 
+/* Media Queries */
+@media (max-width: 768px) {
+  .section h2 {
+    font-size: 1.5rem;
+  }
+
+  .form-control {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  nav .nav-link {
+    font-size: 0.9rem;
+  }
+
+  button {
+    padding: 8px 10px;
+  }
+}
