@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Si todo es válido, redirigir
     if (isValid) {
-      window.location.href = "inicio.html"; // Redirigir a la página de inicio
+      window.location.href = "index.html"; // Redirigir a la página de inicio
     }
   });
 
