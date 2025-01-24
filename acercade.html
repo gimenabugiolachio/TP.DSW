@@ -13,13 +13,13 @@
 </head>
 
 <body>
-  <div class="content-wrapper">
+  <header class="sticky-top">
     <!-- Menú de navegación -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
       <div class="container-fluid">
         <!-- Logo -->
         <a href="inicio.html" class="navbar-brand">
-          <img src="./Images/logo.png" alt="ElectroMarket Logo" style="height: 50px" />
+          <img src="./Images/logo.png" alt="ElectroMarket Logo" style="height: 50px">
         </a>
 
         <!-- Botón toggle para dispositivos pequeños -->
@@ -35,7 +35,7 @@
               <a href="inicio.html" class="nav-link">Inicio</a>
             </li>
             <li class="nav-item">
-              <a href="acercade.html" class="nav-link active">Acerca de</a>
+              <a href="acercade.html" class="nav-link  active">Acerca de</a>
             </li>
             <li class="nav-item">
               <a href="categorias.html" class="nav-link">Categorías</a>
@@ -46,27 +46,46 @@
           </ul>
 
           <!-- Botones de navegación centrados -->
-          <div class="d-flex justify-content-center align-items-center">
-            <a href="#" class="btn btn-outline-secondary me-2">
+          <div class="d-flex">
+            <a href="#" class="btn btn-outline-secondary me-2" aria-label="Buscar">
               <i class="fas fa-search"></i>
             </a>
-            <a href="#" class="btn btn-outline-secondary me-2">
+            <a href="#" class="btn btn-outline-secondary me-2" aria-label="Carrito de compras">
               <i class="fas fa-shopping-cart"></i>
             </a>
-            <a href="login.html" class="btn btn-outline-secondary me-2">
+            <a href="login.html" class="btn btn-outline-secondary me-2" aria-label="Usuario">
               <i class="fas fa-user"></i>
             </a>
-            <a href="#" class="btn btn-outline-secondary">
+            <!-- Botón que Abre el Modal -->
+            <a href="#" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#favoritosModal"
+              aria-label="Favoritos">
               <i class="fas fa-star"></i>
             </a>
           </div>
         </div>
       </div>
     </nav>
+  </header>
 
+  <!-- Modal -->
+  <div class="modal fade" id="favoritosModal" tabindex="-1" aria-labelledby="favoritosModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="favoritosModalLabel">Tus Favoritos</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <p>Aquí aparecerán los productos que agregues a tus favoritos.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
     <!-- Sección Acerca de -->
     <section id="acerca-de">
-      
         <img class="banner-acercade" src="./Images/edificio.jpg" alt="Foto de empresa">
         <div class="container">
         <div class="intro">
