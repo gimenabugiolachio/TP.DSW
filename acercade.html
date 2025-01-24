@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Acerca de - ElectroMarket</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -13,60 +13,7 @@
 </head>
 
 <body>
-  <header class="sticky-top">
-    <!-- Menú de navegación -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-      <div class="container-fluid">
-        <!-- Logo -->
-        <a href="inicio.html" class="navbar-brand">
-          <img src="./Images/logo.png" alt="ElectroMarket Logo" style="height: 50px">
-        </a>
-
-        <!-- Botón toggle para dispositivos pequeños -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Enlaces del menú -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a href="inicio.html" class="nav-link">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a href="acercade.html" class="nav-link  active">Acerca de</a>
-            </li>
-            <li class="nav-item">
-              <a href="categorias.html" class="nav-link">Categorías</a>
-            </li>
-            <li class="nav-item">
-              <a href="contacto.html" class="nav-link">Contacto</a>
-            </li>
-          </ul>
-
-          <!-- Botones de navegación centrados -->
-          <div class="d-flex">
-            <a href="#" class="btn btn-outline-secondary me-2" aria-label="Buscar">
-              <i class="fas fa-search"></i>
-            </a>
-            <a href="#" class="btn btn-outline-secondary me-2" aria-label="Carrito de compras">
-              <i class="fas fa-shopping-cart"></i>
-            </a>
-            <a href="login.html" class="btn btn-outline-secondary me-2" aria-label="Usuario">
-              <i class="fas fa-user"></i>
-            </a>
-            <!-- Botón que Abre el Modal -->
-            <a href="#" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#favoritosModal"
-              aria-label="Favoritos">
-              <i class="fas fa-star"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header>
-
+  <header id="navbar"></header>
   <!-- Modal -->
   <div class="modal fade" id="favoritosModal" tabindex="-1" aria-labelledby="favoritosModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -84,55 +31,63 @@
       </div>
     </div>
   </div>
-    <!-- Sección Acerca de -->
-    <section id="acerca-de">
-        <img class="banner-acercade" src="./Images/edificio.jpg" alt="Foto de empresa">
-        <div class="container">
-        <div class="intro">
-          <h3 class="mt-3">Nuestra misión y nuestros valores</h3>
-          <p>Nos comprometemos a cumplir con las leyes y las regulaciones locales, así como a aplicar un código de
-            conducta estricto para todos los empleados. Creemos que la gestión ética no solo es una herramienta para
-            responder a los cambios rápidos en el entorno empresarial a nivel mundial, sino también una forma de generar
-            confianza con sus diversas partes interesadas, lo que incluye clientes, accionistas, empleados, socios
-            comerciales y comunidades locales. Samsung tiene el objetivo de convertirse en una de las empresas más éticas
-            del mundo, por eso continúa capacitando a sus empleados y operando sistemas de monitoreo, mientras pone en
-            práctica una gestión corporativa justa y transparente.</p>
-        </div>
-        <div class="image-container">
+  <!-- Sección Acerca de -->
+  <section id="acerca-de">
+    <img class="banner-acercade" src="./Images/edificio.jpg" alt="Foto de empresa">
+    <div class="container">
+      <div class="intro">
+        <h3 class="mt-3">Nuestra misión y nuestros valores</h3>
+        <p>Nos comprometemos a cumplir con las leyes y las regulaciones locales, así como a aplicar un código de
+          conducta estricto para todos los empleados. Creemos que la gestión ética no solo es una herramienta para
+          responder a los cambios rápidos en el entorno empresarial a nivel mundial, sino también una forma de generar
+          confianza con sus diversas partes interesadas, lo que incluye clientes, accionistas, empleados, socios
+          comerciales y comunidades locales. Samsung tiene el objetivo de convertirse en una de las empresas más
+          éticas
+          del mundo, por eso continúa capacitando a sus empleados y operando sistemas de monitoreo, mientras pone en
+          práctica una gestión corporativa justa y transparente.</p>
+      </div>
+      <div class="image-container">
         <img src="./Images/acerca_de_1.svg" alt="Imagen representativa de misión  enfoque de la empresa" class="myv">
         <div class="text d-none d-md-block">
           <h2>Nuestra misión y enfoque</h2>
-          <p>Nuestra misión es conectar a las personas con la tecnología más avanzada, ofreciendo productos electrónicos
+          <p>Nuestra misión es conectar a las personas con la tecnología más avanzada, ofreciendo productos
+            electrónicos
             de alta calidad que mejoran la vida diaria en el hogar y en el trabajo. Proporcionamos una experiencia de
             compra online eficiente y amigable, con una plataforma intuitiva y confiable que facilita el acceso a lo
             último en innovación tecnológica.</p>
         </div>
-    </div>
-    <div class="d-block d-md-none">
-      <h2>Nuestra misión y enfoque</h2>
-      <p>Nuestra misión es conectar a las personas con la tecnología más avanzada, ofreciendo productos electrónicos de
-        alta calidad que mejoran la vida diaria en el hogar y en el trabajo. Proporcionamos una experiencia de compra
-        online eficiente y amigable, con una plataforma intuitiva y confiable que facilita el acceso a lo último en
-        innovación tecnológica.</p>
-    </div>
-    <div class="image-container">
-      <img src="./Images/acerca_de_2.svg" alt="Imagen representativa de valores de la empresa" class="myv">
-      <div class="text d-none d-md-block">
-        <h2>Los valores que nos definen</h2>
-        <p>Valoramos la innovación y la calidad, ofreciendo productos tecnológicos confiables y de alto rendimiento. Nos
+      </div>
+      <div class="d-block d-md-none">
+        <h2 class="text-center gap-3">Nuestra misión y enfoque</h2>
+        <p class="text-center">Nuestra misión es conectar a las personas con la tecnología más avanzada, ofreciendo
+          productos electrónicos de
+          alta calidad que mejoran la vida diaria en el hogar y en el trabajo. Proporcionamos una experiencia de
+          compra
+          online eficiente y amigable, con una plataforma intuitiva y confiable que facilita el acceso a lo último en
+          innovación tecnológica.</p>
+      </div>
+      <div class="image-container">
+        <img src="./Images/acerca_de_2.svg" alt="Imagen representativa de valores de la empresa" class="myv">
+        <div class="text d-none d-md-block">
+          <h2>Los valores que nos definen</h2>
+          <p>Valoramos la innovación y la calidad, ofreciendo productos tecnológicos confiables y de alto rendimiento.
+            Nos
+            enfocamos en brindar una experiencia de compra sencilla y accesible, asegurando que la tecnología esté al
+            alcance de todos. Promovemos prácticas sostenibles y responsables, con un compromiso constante hacia la
+            satisfacción y el bienestar de nuestros clientes.</p>
+        </div>
+      </div>
+      <div class="d-block d-md-none">
+        <h2 class="text-center gap-3">Los valores que nos definen</h2>
+        <p class="text-center">Valoramos la innovación y la calidad, ofreciendo productos tecnológicos confiables y de
+          alto rendimiento. Nos
           enfocamos en brindar una experiencia de compra sencilla y accesible, asegurando que la tecnología esté al
-          alcance de todos. Promovemos prácticas sostenibles y responsables, con un compromiso constante hacia la
-          satisfacción y el bienestar de nuestros clientes.</p>
+          alcance
+          de todos. Promovemos prácticas sostenibles y responsables, con un compromiso constante hacia la satisfacción
+          y el
+          bienestar de nuestros clientes.</p>
       </div>
     </div>
-    <div class="d-block d-md-none">
-      <h2>Los valores que nos definen</h2>
-      <p>Valoramos la innovación y la calidad, ofreciendo productos tecnológicos confiables y de alto rendimiento. Nos
-        enfocamos en brindar una experiencia de compra sencilla y accesible, asegurando que la tecnología esté al alcance
-        de todos. Promovemos prácticas sostenibles y responsables, con un compromiso constante hacia la satisfacción y el
-        bienestar de nuestros clientes.</p>
-    </div>
-      </div>
   </section>
 
   <!-- Footer -->
@@ -141,7 +96,31 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const navbarContainer = document.getElementById("navbar");
+        fetch("navbar.html")
+          .then(response => {
+            if (!response.ok) {
+              throw new Error("No se pudo cargar el navbar.");
+            }
+            return response.text();
+          })
+          .then(data => {
+            navbarContainer.innerHTML = data;
+    
+            // Resalta el enlace activo
+            const currentPage = window.location.pathname.split("/").pop();
+            const activeLink = navbarContainer.querySelector(`a[href="${currentPage}"]`);
+            if (activeLink) {
+              activeLink.classList.add("active");
+            }
+          })
+          .catch(error => console.error("Error cargando el navbar:", error));
+      });
     </script>
 </body>
 

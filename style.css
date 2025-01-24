@@ -7,7 +7,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  overflow-x: hidden; /* Elimina el desplazamiento horizontal */
+  overflow-x: hidden; 
   line-height: 1.6;
   background-color: #f4f4f4;
   display: flex;
@@ -16,6 +16,13 @@ body {
 }
 
 /* Navegación */
+
+.navbar .nav-link.active {
+  font-weight:400;
+  color: #000;
+}
+
+
 nav {
   background-color: #ffff;
   color: #000;
